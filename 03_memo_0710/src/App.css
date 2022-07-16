@@ -194,7 +194,7 @@ input[type*="radio"]:checked{
  -webkit-appearance:none;
  -moz-appearance:none;
  border: none;   
- margin: 30px auto 140px;
+ margin: 30px auto 60px;
 }
 
 

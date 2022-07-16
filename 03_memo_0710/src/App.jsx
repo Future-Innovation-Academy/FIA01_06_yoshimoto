@@ -193,8 +193,10 @@ function App() {
                       </textarea>
                   </dd>
               </dl>
+                <div className="btn-submit">
                 <Button type="submit" variant="contained">送信</Button>
                 {/* <input type="submit" value="送信" className="btn btn-submit" /> */}
+                </div>
             </form>
           </div> 
        {/* </section> */}
@@ -203,24 +205,44 @@ function App() {
 
       {/* dataというuseStateの塊を、es6のmapというおまじないを使って表示しています */}
       {/* itemは任意で決める、a,でもよい */}
+      <h3 className="text-center contact__text">お問い合わせ一覧</h3>
       {data.map((item, index) => (
         <div key={index}>
           {/* <p>タイトル：{item.title}</p> */}
           {/* <p>追加したもの：{item.email}</p> */}
-          <p>{item.name}</p>
+          {/* <p>{item.name}</p>
           <p>{item.kana}</p>
           <p>{item.email}</p>
           <p>{item.cue}</p>
           <p>{item.reason}</p>
-          <p>{item.detail}</p>
-          <Button onClick={()=>handleDelete(index)}>削除</Button>
+          <p>{item.detail}</p> */}
+          
           {/* <Button type="remove" variant="contained" onClick={()=>handleDelete()}>削除</Button> */}
+
+          
+          <dl className="contact__list">
+              <dt className="contact__dt">名前</dt>
+              <dd className="contact__dd">{item.name}</dd>
+              <dt className="contact__dt">カナ</dt>
+              <dd className="contact__dd">{item.kana}</dd>
+              <dt className="contact__dt">メールアドレス</dt>
+              <dd className="contact__dd">{item.email}</dd>
+              <dt className="contact__dt trigger">チーズアカデミーを知ったきっかけ</dt>
+              <dd className="contact__dd">{item.cue}</dd>
+              <dt className="contact__dt">志望動機</dt>
+              <dd className="contact__dd">{item.reason}</dd>
+              <dt className="contact__dt bottom">詳細</dt>
+              <dd className="contact__dd bottom">{item.detail}</dd>
+          </dl>
+          <div className="btn-submit">
+          <Button onClick={()=>handleDelete(index)}>削除</Button>
+          </div>
         </div>
       ))}
        
-       <form onSubmit={allDelete}>
+       <form onSubmit={allDelete} className="btn-submit">
         <Button type="submit" variant="contained">クリア</Button>
-      </form>
+       </form>
 
 
 
