@@ -15,10 +15,10 @@ Youtubeで、React＋ToDoリストで動画を見てコードを見よう見ま�
 クリアボタンを使ってLocalStorageの一括削除<br>
 
 **<できなかったこと>**<br>
-LocalStorageの個別データの削除<br>
+~~LocalStorageの個別データの削除<br>~~
 ~~Mapで書きだした項目のCSS実装~~<br>
-「志望動機」を複数選択しても、LocalStorageには1つしか反映されない。<br>
-送信ボタンを押した後、SelectやRadioボタンで選択した項目がクリアされない<br>
+~~「志望動機」を複数選択しても、LocalStorageには1つしか反映されない。<br>~~
+~~送信ボタンを押した後、SelectやRadioボタンで選択した項目がクリアされない<br>~~
 
 ## **更新(0722)**<br>
 LocalStrageの個別データの削除<br>
