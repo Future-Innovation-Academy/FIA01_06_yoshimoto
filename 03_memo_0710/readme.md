@@ -19,3 +19,8 @@ LocalStorageの個別データの削除<br>
 ~~Mapで書きだした項目のCSS実装~~<br>
 「志望動機」を複数選択しても、LocalStorageには1つしか反映されない。<br>
 送信ボタンを押した後、SelectやRadioボタンで選択した項目がクリアされない<br>
+
+## **更新(0722)**<br>
+LocalStrageの個別データの削除<br>
+「志望動機」複数選択結果を、LocalStrageに反映<br>
+送信ボタンを押した後、Selectbox,checkboxのリセット<br>
